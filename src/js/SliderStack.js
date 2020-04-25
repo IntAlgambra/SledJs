@@ -1,4 +1,4 @@
-class SliderStack {
+export default class SliderStack {
   constructor(totalSlides, perView) {
     this.totalSlides = totalSlides;
     this.perView = perView;
@@ -23,7 +23,6 @@ class SliderStack {
 
   next() {
     this.current = this.getNext();
-    console.log(this.current);
   }
 
   getPrev() {
@@ -38,12 +37,9 @@ class SliderStack {
 
   prev() {
     this.current = this.getPrev();
-    console.log(this.current);
   }
 
   getCurrent() {
     return this.current;
   }
 }
-
-export default SliderStack;
